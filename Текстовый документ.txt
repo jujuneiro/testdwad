@@ -1,0 +1,21 @@
+Все по порядку.
+1)	Создаем папку в домашней папке, туда пикаем открытие терминала. Делаем исключительно все в терминале а на 12 этапе перекинет в VS code
+2)	Все делаем в окружение venv
+3)	Sudo dnf install vscode 
+4)	Sudo dnf install -y dbeaver
+5)	Потом накатываем либру – sudo dnf install libreoffice( в ней же переформатируем формат excel-ских файлов в csv чтобы их импортировать в нашу БД, позже дополню это)
+6)	После открываем дебьювер и создаем соединение с postgres.
+7)	sudo dnf install -y postgresql postgresql-server postgresql-devel
+8)	postgres –version – проверка на установку
+9)	sudo systemctl postgresql12
+10)	systemctl status postgresql12 – проверка статуса
+11)	Открываем git clone https://github.com/pahan552/testobuster.git
+12)	Открываем code . (меняем папку testobuster на другое название чтобы не спалиться в идентичности иначе пизда всем)
+13)	 Далее открываем dbeaver , кликаем на нашу БД – редактор SQL – открыть SQL скрипт,  вставляем туда : shema sql потом data sql. 
+14)	Открываем терминал в Vs code - pip install --upgrade pip, обновляем pip весь
+15)	pip install psycopg2-binary
+16)	 pip install PySide6
+17)	
+
+Команды: Ctrl + A скопировать все, alt + x запустить запрос. 
+Сначала выполняем shema.sql позже заполнение data.sql. Но если БД будет другой тематики, учите 3НФ и как в принципе работать с запросами иначе 200
