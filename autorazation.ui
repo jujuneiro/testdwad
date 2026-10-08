@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="logoLabel">
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../Рабочий стол/Images/Чудо Обувь.ico</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="styleSheet">
+         <string notr="true">QLabel#titleLabel {
+font-family: 'Calibri';
+font-size: 18pt;
+font-weight: bold;
+color: #70B2AF;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Каталог товаров</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="userinfolabel">
+        <property name="styleSheet">
+         <string notr="true">QLabel#userinfolabel {
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="LogoutButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: #70B2AF;
+color: #FFFFFF;
+border: none;
+padding: 8px 16px;
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}
+
+QPushButton:hover  {
+back-ground-color: #5A9B98;
+}
+
+QPushButton:hover {
+background-color: #4A8582;
+}</string>
+        </property>
+        <property name="text">
+         <string>Выйти</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="searchLineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#searchLineEdit {
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите название для поиска</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="filterComboBox">
+        <property name="styleSheet">
+         <string notr="true">QComboBox#filterComboBox{
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+background-color: #70B2AF
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="sortComboBox">
+        <property name="styleSheet">
+         <string notr="true">QComboBox#sortComboBox{
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+background-color: #70B2AF
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="productsTable"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>358</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addToOrderButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton#addToOrderButton{
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}
+
+QPushButton {
+background-color: #70B2AF;
+color: #FFFFFF;
+border: none;
+padding: 8px 16px;
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}
+
+QPushButton:hover  {
+back-ground-color: #5A9B98;
+}
+
+QPushButton:hover {
+background-color: #4A8582;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Добавить заказ/Корзина</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="manageOrdersButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton#manageOrdersButton{
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}
+
+QPushButton {
+background-color: #70B2AF;
+color: #FFFFFF;
+border: none;
+padding: 8px 16px;
+font-family: 'Calibri';
+font-size: 12pt;
+font-weight: bold;
+}
+
+QPushButton:hover  {
+back-ground-color: #5A9B98;
+}
+
+QPushButton:hover {
+background-color: #4A8582;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Управление заказами</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
